@@ -13,25 +13,33 @@
             Console.WriteLine("**************");
             int gamePlay = int.Parse(Console.ReadLine());
 
-            for (int g = 1; g <= 4; g++) ;
+            while (gamePlay == 1)
             {
-                if (gamePlay == 1) ;
-                {
-                    Console.WriteLine("Loading Game...");
-                    for (int d = 0; 0 < 4; d++) ;
-   
-                }
-                    
+                Console.WriteLine();
+                Console.WriteLine("Game Loading...");
+                int menuOptions = int.Parse(Console.ReadLine());
             }
-            for (int g = 2; g <= 4; g++) ;
+            while (gamePlay == 2)
             {
-                 if (gamePlay == 2) ;
-             {
-                 Console.Write("Select which game you wish to play: ");
-                 for (int l = 0; 0 < 4; l++) ;
-                  int p = int.Parse(Console.ReadLine());
-             }
+                Console.WriteLine();
+                Console.WriteLine("Choose which file you wanna play: ");
+                int menuOptions = int.Parse(Console.ReadLine());
             }
+            while (gamePlay == 3)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Audio");
+                Console.WriteLine("Graphics");
+                Console.WriteLine("Character Layers");
+                Console.WriteLine("Visuals");
+                int menuOptions = int.Parse(Console.ReadLine());
+            }
+            while (gamePlay == 4)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Are you sure you wanna close this application? 1/0?");
+                gamePlay = int.Parse(Console.ReadLine());
+            } 
         }
     }
 }
